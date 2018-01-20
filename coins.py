@@ -86,7 +86,7 @@ def subscribe(key, subscribed_coins):
             print("%d: %s" % (r.status_code, url))
         print("=> Done sending, wait for next round.")
         print("")
-        time.sleep(15) # minimum time required to wait by ThingSpeak (for free accounts)
+        time.sleep(120)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] == '-h':
